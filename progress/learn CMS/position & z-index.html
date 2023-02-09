@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        
+        .kotak {
+            background-color: rgb(26, 23, 23);
+            position: fixed;
+            top: 100px;
+            bottom: 100px;
+            right: 100px;
+            left: 100px;
+            opacity: 0.7; /* oppacity untuk membuat transparan*/
+            /*kita bisa membuat element kotak tidak mempunyai lebar dan tinggi
+              menggunakan left 0 right 0 bottom 0 top 0 seolah olah element nya di tarik dari kiri ke kanan dan hasil nya sama persis
+            */
+        }
+        
+        .close {
+            width: 50px;
+            height: 50px;
+            background-color: aliceblue;
+            border: 3px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+        }
+        h1 {
+            margin-top: 50px;
+        }
+        /*
+        div {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+        }
+        .satu {
+            background-color: red;
+            z-index: 1;
+        }
+        .dua {
+            background-color: green;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+        .tiga {
+            background-color: blue;
+            top: 200px;
+            left: 200px;
+        } */
+        /* kenapa biru paling depan karna markup nya kita taruh paling terakhir itu adalah perilaku default dari element html yang kita punya
+        nah untuk mengatur posisi tumpukan dari dimensi yang non static seperti relative absolut dan fixed 
+        kita bisa memakai properti z-index & untuk mengatur tumpukan kotak kita paling depan dengan kita itu kita bisa menambahkan angka nya 
+        yang paling besar seperti cntoh di atas
+        */
+    </style>
+</head>
+<body>
+<!--
+    <div class="satu"></div>
+    <div class="dua"></div>-->
+    <div class="kotak"><div class="close"></div>
+    </div>
+    
+    <h1>hello bray</h1>
+    <h2> Selamat datang di neraka</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores commodi repellat sunt molestias illo maiores ut assumenda a voluptatum quas maxime architecto blanditiis, laborum cumque tempore tempora minima eius ad dolor corrupti sequi voluptate dolore praesentium! Nemo necessitatibus est aspernatur incidunt, tempore, et corporis vel dicta id earum iste dolores?
+    </p>
+
+</body>
+<!-- ada yang nama nya CSS "Position" terdiri dari 
+    -(static) yang menjadi default nya 
+    -(relative) untuk bebas mengatur posisi berbeda dari dimensi normal nya
+    -(absolute) keluar dari dimensi normal akan tetapi dia akan mencari element parent terdekat yang non static cntoh sperti body dll 
+    -(fixed) perilaku nya hampir seperti absolute akan tetapi dia akan tetap pada posisi nya tanpa memperdulikan parent nya dan ketika di scroll dia akan tetap pada posisi -->
+</html>
